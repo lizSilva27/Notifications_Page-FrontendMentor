@@ -21,7 +21,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/lizSilva27/Notifications_Page-FrontendMentor
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://notifications-page-ft.netlify.app
 
 ## My process
 
