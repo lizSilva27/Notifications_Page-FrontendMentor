@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --VeryLightGrayishBlue: hsl(210, 60%, 98%);
+  --LightGrayishBlue_1: hsl(211, 68%, 94%);
+  --LightGrayishBlue_2: hsl(205, 33%, 90%);
+  --GrayishBlue: hsl(219, 14%, 63%);
+  --DarkGrayishBlue: hsl(219, 12%, 42%);
+  --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+}
+
+.main {
+  padding: 24px 16px;
+}
+
+.Notifications {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  & .title {
+    color: var(--VeryDarkBlue);
+    font-weight: 800;
+    font-size: 20px;
+    word-spacing: 9px;
+
+    & .squareBlue {
+      background-color: var(--Blue);
+      display: inline-block;
+      text-align: center;
+      width: 32px;
+      height: 25px;
+      color: var(--White);
+      border-radius: 6px;
+    }
+  }
+  & .mark {
+    /* border: 1px solid red; */
+    color: var(--VeryDarkBlue);
+    font-size: 0.875em; /*14px*/
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      color: var(--Blue);
+    }
+  }
+}
+
+.post {
+  background-color: var(--VeryLightGrayishBlue);
+  color: var(--DarkGrayishBlue );
+  font-size: 0.875em;
+  min-width: 343px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  gap: 13px;
+  padding: 16px;
+  margin: 0 auto 10px;
+  cursor: pointer;
+  position: relative;
+
+  & .imgProfile {
+    width: 45px;
+    height: 45px;
+  }
+
+  & .name {
+    font-weight: bold;
+    color: var(--VeryDarkBlue);
+
+    &:hover {
+      color: var(--Blue);
+    }
+  }
+
+  & .group {
+    font-weight: bold;
+    color: var(--Blue);
+  }
+
+  & .reaction {
+    font-weight: bold;
+    &hover {
+      color: var(--Blue);
+    }
+  }
+
+  & .time {
+    color: var(--GrayishBlue);
+    font-size: 0.875em;
+    font-weight: 500;
+  }
+
+  & .containerMessage {
+    border: 1px solid var(--LightGrayishBlue_2);
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 12px;
+
+    &:hover {
+      background-color: var(--LightGrayishBlue_1);
+    }
+  }
+
+  & .picture2 {
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    right: 16px;
+  }
+}
+
+.not-read {
+  background-color: var(--Red);
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 8px;
+  width: 8px;
+  height: 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+
+  .main {
+    width: 730px;
+    margin: 0 auto;
+  }
+  
+}
